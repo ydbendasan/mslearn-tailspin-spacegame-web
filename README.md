@@ -1,6 +1,6 @@
 
 [![Build Status](https://doga.visualstudio.com/Space%20Game%20Web%20SonarCloud/_apis/build/status/mslearn-tailspin-spacegame-web?branchName=master)](https://doga.visualstudio.com/Space%20Game%20Web%20SonarCloud/_build/latest?definitionId=10&branchName=master)
-
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ydbendasan_mslearn-tailspin-spacegame-web&metric=alert_status)](https://sonarcloud.io/dashboard?id=ydbendasan_mslearn-tailspin-spacegame-web)
 # Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
