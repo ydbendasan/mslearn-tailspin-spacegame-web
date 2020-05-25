@@ -58,9 +58,10 @@ steps:
   condition: |
     and
     (
-      succeeded(),
-      or(
-        eq(variables['Build.SourceBranchName', 'master']),
+      succeeded()
+      or
+      (
+        eq(variables['Build.SourceBranchName', 'master'])
         and
         (
           eq(variables['Build.Reason'], 'PullRequest'),
