@@ -59,8 +59,15 @@ steps:
     and
     (
       succeeded(),
-      eq(variables['Build.Reason'], 'PullRequest'),
-      eq(variables['System.PullRequest.TargetBranch'], 'master')
+      or
+      (
+        eq(variables['Build.SourceBranchName'], 'master'),
+        and
+        (
+          eq(variables['Build.Reason'], 'PullRequest'),
+          eq(variables['System.PullRequest.TargetBranch'], 'master')
+        )
+      )      
     )
 
 - task: DotNetCoreCLI@2
@@ -95,8 +102,14 @@ steps:
     and
     (
       succeeded(),
-      eq(variables['Build.Reason'], 'PullRequest'),
-      eq(variables['System.PullRequest.TargetBranch'], 'master')
+      or(
+        eq(variables['Build.SourceBranchName'], 'master'),
+        and
+        (
+          eq(variables['Build.Reason'], 'PullRequest'),
+          eq(variables['System.PullRequest.TargetBranch'], 'master')
+        )
+      )      
     )
 
 - task: SonarCloudPublish@1
@@ -105,8 +118,14 @@ steps:
     and
     (
       succeeded(),
-      eq(variables['Build.Reason'], 'PullRequest'),
-      eq(variables['System.PullRequest.TargetBranch'], 'master')
+      or(
+        eq(variables['Build.SourceBranchName'], 'master'),
+        and
+        (
+          eq(variables['Build.Reason'], 'PullRequest'),
+          eq(variables['System.PullRequest.TargetBranch'], 'master')
+        )
+      )      
     )
 
 - task: PublishCodeCoverageResults@1
