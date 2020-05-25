@@ -1,4 +1,6 @@
 
+[![Build Status](https://doga.visualstudio.com/Space%20Game%20Web%20SonarCloud/_apis/build/status/mslearn-tailspin-spacegame-web?branchName=master)](https://doga.visualstudio.com/Space%20Game%20Web%20SonarCloud/_build/latest?definitionId=10&branchName=master)
+
 # Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
