@@ -61,7 +61,7 @@ steps:
       succeeded(),
       or
       (
-        eq(variables['Build.SourceBranchName'], 'master']),
+        eq(variables['Build.SourceBranchName'], 'master'),
         and
         (
           eq(variables['Build.Reason'], 'PullRequest'),
@@ -103,7 +103,7 @@ steps:
     (
       succeeded(),
       or(
-        eq(variables['Build.SourceBranchName'], 'master']),
+        eq(variables['Build.SourceBranchName'], 'master'),
         and
         (
           eq(variables['Build.Reason'], 'PullRequest'),
@@ -119,7 +119,7 @@ steps:
     (
       succeeded(),
       or(
-        eq(variables['Build.SourceBranchName'], 'master']),
+        eq(variables['Build.SourceBranchName'], 'master'),
         and
         (
           eq(variables['Build.Reason'], 'PullRequest'),
