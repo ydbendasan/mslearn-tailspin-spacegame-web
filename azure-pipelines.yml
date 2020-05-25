@@ -58,7 +58,7 @@ steps:
   condition: |
     and
     (
-      succeeded()
+      succeeded(),
       or
       (
         eq(variables['Build.SourceBranchName', 'master'])
